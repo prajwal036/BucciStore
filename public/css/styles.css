@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding:0;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+
+}
+body, html {
+    height: 100%;
+  }
+
+
+/*Navbar Div*/
+.navigator{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:2rem;
+}
+
+
+/*  navbar hover settings*/
+.navbar-links:hover{
+    transition: ease-in 300ms;
+    background-color: #62B6B7;
+}
+
+.navbar-links{
+    margin:0;
+    padding: 0 2rem;
+    color: white;
+}
+
+.link-cor{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link-cor:hover{
+    color: white;
+    margin: 0;
+    
+}
+
+
+.carousel-css{
+    height: 75vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylist{
+    margin: 7rem 0;
+}
+
+
+/* KEEPS SOBRE IN THE MIDDLE OF THE CONTAINER*/
+.content{
+    margin:0 4rem;
+}
+/*SOBRE HEADING*/
+.about-heading{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+/*About paragraph*/
+.para-about{
+    padding:0 7rem;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: large;
+}
+
+
+/*MAIN DIV OF THE CATEGORIES SECTION*/
+.categories{
+    padding: 2rem 10rem;
+    background-color: #F8F4EA ;
+    text-align: center;
+    border:0
+}
+
+/*MAIN HEADER OF THE CATREGORIES*/
+.categories-header{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding:2rem;
+}
+
+/* Borders of cards of pictures for more */
+.card-borders{
+    border-radius: 4%;
+    border-style: none;
+    padding-bottom: 2rem;
+}
+
+/* Parallax image */
+.bgimg-2 {
+    padding-top:2rem;
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/images/test-background.jpg");
+    min-height: 400px;
+  }
+
+  .caption{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .caption span.border {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+#testimonials{
+    text-align: center;
+    color: white;
+    background-color: rgba(47, 42, 42, 0.691);
+    padding: 4rem;
+}
+#testimonials>h2{
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.test-img{
+    border-radius: 50%;
+    padding: 0.3rem;
+    background-color: white;
+}
+
+.test-item {
+    padding: 3rem 2rem;
+    line-height: 2rem;
+  }
+
+
+  .footer{
+    background-color: #F5F5DC;
+    padding: 4rem 2rem;
+  }
+  .align-foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .foot-brand{
+    width: 200px;
+    height: auto;
+  }
+
+  .foot-links-style{
+    color: black;
+    text-decoration: none;
+  }
+  .icon-size{
+    font-size: 41px;
+    line-height: 41px;
+    padding: 0.5rem;
+  }
+
+@media only screen and (max-width: 1100px) {
+    .carousel-css{
+        height: 50vh;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigator{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .para-about{
+        padding:0 2rem;
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: medium;
+    }
+
+    .stylist{
+        padding: 7rem;
+        align-items: center;
+    }
+    .bgimg-2{
+            background-attachment: scroll;
+    }
+
+    .content{
+        margin:0;
+        padding-left: 2rem;
+    }
+}
