@@ -17,6 +17,7 @@ body, html {
     justify-content: center;
     flex-direction: column;
     padding:2rem;
+    background-color: #F9F7F7;
 }
 
 
@@ -28,12 +29,22 @@ body, html {
 
 .navbar-links{
     margin:0;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    color: white;
+    list-style-type: none;
+}
+.navbar-orientation{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-links:hover{
     color: white;
 }
 
 .link-cor{
     font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
 .link-cor:hover{
@@ -50,6 +61,7 @@ body, html {
     align-items: center;
 }
 
+/* it makes space up and down in sobre section */
 .stylist{
     margin: 7rem 0;
 }
@@ -65,7 +77,7 @@ body, html {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 /*About paragraph*/
@@ -79,28 +91,30 @@ body, html {
 
 /*MAIN DIV OF THE CATEGORIES SECTION*/
 .categories{
-    padding: 2rem 10rem;
-    background-color: #F8F4EA ;
+    /* padding: 2rem 10rem; */
+    background-color: white;
+    border-style: none;
     text-align: center;
     border:0
 }
 
 /*MAIN HEADER OF THE CATREGORIES*/
 .categories-header{
-    font-size: 2rem;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    padding:2rem;
+    text-align: center;
+    font-weight: 500;
+    /* padding-bottom:1rem; */
 }
 
 /* Borders of cards of pictures for more */
 .card-borders{
-    border-radius: 4%;
     border-style: none;
-    padding-bottom: 2rem;
+    padding:3rem 2rem;
 }
 
 /* Parallax image */
+
 .bgimg-2 {
     padding-top:2rem;
     position: relative;
@@ -112,6 +126,7 @@ body, html {
     background-image: url("/images/test-background.jpg");
     min-height: 400px;
   }
+
 
   .caption{
     min-height: 400px;
@@ -149,9 +164,9 @@ body, html {
     line-height: 2rem;
   }
 
-
+/* footer */
   .footer{
-    background-color: #F5F5DC;
+    background-color: #FDF6F0;
     padding: 4rem 2rem;
   }
   .align-foot{
@@ -177,19 +192,108 @@ body, html {
     padding: 0.5rem;
   }
 
+  /* CONTACT US Form */
+    #contact-us-form{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding:5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #F8E2CF;
+  }
+
+  .form-contact{
+    padding: 0 7rem;
+    text-align: center;
+  }
+
+  .form-input{
+    text-align: center;
+  }
+
+  /* gallery */
+  .gallery-block.grid-gallery{
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  
+  .gallery-block.grid-gallery .heading{
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  
+  .gallery-block.grid-gallery .heading h2{
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+  }
+  
+  .gallery-block.grid-gallery a:hover{
+    opacity: 0.8;
+  }
+  
+  .gallery-block.grid-gallery .item img{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+  }
+  
+  .gallery-block.grid-gallery .item{
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 576px) {
+  
+    .gallery-block.grid-gallery .scale-on-hover:hover{
+      transform: scale(1.05);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+
+
+
+
+
+/* For small screens */
+
 @media only screen and (max-width: 1100px) {
     .carousel-css{
-        height: 50vh;
-        width: auto;
+        width: 100vw;
+        height: auto;
         justify-content: center;
         align-items: center;
     }
-
+    .sobre-pic{
+        width: 100vw;
+    }
+    
     .navigator{
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        margin: 0;
+        /* text-align: center; */
     }
+    .navbar-links{
+        margin:0;
+        padding: 0;
+        color: white;
+    }
+
+    /*MAIN DIV OF THE CATEGORIES SECTION*/
+    .categories{
+    /* padding: 2rem 10rem; */
+    background-color: white;
+    border-style: none;
+    text-align: center;
+    border:0
+    }
+
+    
+
+    /* Borders of cards of pictures for more */
+    .card-borders{
+    border-style: none;
+    padding-bottom: 2rem;
+    }
+
 
     .para-about{
         padding:0 2rem;
@@ -199,15 +303,72 @@ body, html {
     }
 
     .stylist{
-        padding: 7rem;
+        margin: 1rem;
         align-items: center;
     }
     .bgimg-2{
             background-attachment: scroll;
     }
 
+    /* Parallax image */
+    .bgimg-2 {
+        padding-top:2rem;
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 400px;
+    }
+
+    .caption{
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caption span.border {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    }
+
+    /* testimonial main div */
+    #testimonials{
+    text-align: center;
+    color: white;
+    background-color: rgba(47, 42, 42, 0.691);
+    padding: 4rem;
+    }
+
+    #testimonials>h2{
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+   .test-img{
+    border-radius: 50%;
+    padding: 0.3rem;
+    background-color: white;
+    }
+
     .content{
         margin:0;
         padding-left: 2rem;
     }
+
+    #contact-us-form{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding:0rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #F8E2CF;
+      }
 }
+
+
